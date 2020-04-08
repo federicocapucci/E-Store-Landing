@@ -1,0 +1,111 @@
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 2200px;
+    margin: auto;
+    background-color: #eee;
+    box-shadow: 1px 0 5px gray, -1px 0 5px gray;
+}
+
+.fa-apple {
+    color: white;
+    justify-self: left;
+    margin-right: 50%;
+}
+
+.primer-titulo,
+.segundo-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 40px;
+}
+
+.primer-titulo h2,
+.segundo-titulo h2 {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 50px 0;
+}
+
+.primer-titulo p {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 700PX;
+    padding: 10px;
+}
+
+.container-soporte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.formulario {
+    margin-top: 40px;
+    width: 80%;
+    display: block;
+    margin-left: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 50px;
+    border-radius: 5px;
+    margin-right: 40px;
+    box-shadow: -4px 38px 60px -27px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.formulario h2 {
+    margin-bottom: 50px;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(150, 150, 150, 0.3);
+    padding: 20px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.footer-copyright {
+    color: rgba(29, 30, 32, 0.473);
+}
+
+.footer-links {
+    color: rgb(55, 58, 55);
+    padding-left: 10px;
+}
+
+.footer-links:hover {
+    color: rgb(41, 43, 41);
+}
+
+.footer-argentina {
+    color: rgb(41, 43, 41);
+}
+
+.argentina {
+    height: 18px;
+    width: 18px;
+}
