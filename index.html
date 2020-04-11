@@ -40,8 +40,8 @@
                 Otros
               </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Soporte</a>
-                            <a class="dropdown-item" href="#">Contacto</a>
+                            <a class="dropdown-item" href="#supp">Soporte</a>
+                            <a class="dropdown-item" href="#mapa">Sucursales</a>
                         </div>
                     </li>
                 </ul>
@@ -49,14 +49,12 @@
         </nav>
 
         <div class="primer-titulo">
-            <h2>El nuevo iPhone 11 PRO ya esta aqui</h2>
+            <h2>El nuevo iPhone 11 PRO ya esta aqui.</h2>
 
             <p>Un revolucio­nario sistema de triple cámara que multiplica las posibilidades de la forma más sencilla. Un salto sin precedentes en la autonomía. Un portento de chip que dobla la apuesta por el aprendizaje automático y redefine lo que es posible
                 para un móvil. Ha habido otros iPhone, pero solo este se ha ganado el derecho a llamarse Pro.
             </p>
         </div>
-
-
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -83,93 +81,107 @@
         <div class="segundo-titulo">
             <h2>Otros productos Apple</h2>
         </div>
-        <div class="img-container">
-            <a href="https://www.apple.com/mac/"><img src="/macbook_air.jpg" alt="Macbook Air"></a>
-            <a href="https://www.apple.com/es/tv/"><img src="/apple_tv.jpg" alt="Apple TV"></a>
-            <a href="https://www.apple.com/es/ipad/"></a><img src="/ipad_pro.jpg" alt="iPad Pro">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-group mt-3">
+                        <div class="card">
+                            <img src="macbook_air.jpg" class="card-image-top img-fluid" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">MacBook Pro</h4>
+                                <button class="btn btn-dark btn-block">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card ml-3">
+                            <img src="ipad_pro.jpg" class="card-image-top img-fluid" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Ipad Pro</h4>
+                                <button class="btn btn-dark btn-block">Comprar</button>
+                            </div>
+                        </div>
+                        <div class="card ml-3">
+                            <img src="apple_tv.jpg" class="card-image-top img-fluid" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">Apple TV</h4>
+                                <button class="btn btn-dark btn-block">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="container-soporte">
-            <div class="formulario">
+        <div class="col-12 container-soporte" id="supp">
+            <div class="col-12 formulario">
                 <h2>Soporte</h2>
-
-                <body>
+                <form>
+                    <h3></h3>
+                    <div class="row">
+                        <div class="col-12 col-md-12 mb-12">
+                            <h5>Nombre Completo</h5>
+                            <input type="text" class="form-control" placeholder="Nombre">
+                            <!-- <input type="text" class="form-control" placeholder="Last name"> -->
+                        </div>
+                    </div>
+                </form>
+                <form>
                     <form>
-                        <h3></h3>
-                        <div class="row">
-                            <div class="col">
-                                <h5>Nombre</h5>
-                                <input type="text" class="form-control" placeholder="Nombre">
-                                <!-- <input type="text" class="form-control" placeholder="Last name"> -->
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
                             </div>
-                            <div class="col">
-                                <h5>Apellido</h5>
-                                <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Provincia</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Ej: Córdoba">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Ciudad</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Ej: Villa Allende">
                             </div>
                         </div>
                     </form>
-                    <form>
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputEmail4">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress">Dirección</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="Av. Colón">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">Provincia</label>
-                                    <input type="text" class="form-control" id="inputCity" placeholder="Ej: Córdoba">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputCity">Ciudad</label>
-                                    <input type="text" class="form-control" id="inputCity" placeholder="Ej: Villa Allende">
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputZip">Codigo Postal</label>
-                                    <input type="text" class="form-control" id="inputZip">
-                                </div>
-                            </div>
-                        </form>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Producto</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Producto</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
                         <option>iPhone</option>
                         <option>Mac</option>
                         <option>iPad</option>
                         <option>Watch</option>
                         <!-- <option>5</option> -->
                     </select>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
                         Garantia
                     </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                            <label class="form-check-label" for="exampleRadios2">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
                         Soporte
                     </label>
-                        </div>
-                        <div class="form-check">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Descripción</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                    </div>
+                    <div class="form-check">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Descripción</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
-            <div id="map-container-google-11" class="z-depth-1-half map-container-6">
-                <iframe src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            <br>
+            <h3>Sucursales</h3>
+            <br>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7188771.66040682!2d-66.95273862926805!3d-32.04816922037524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sapple%20argentina!5e0!3m2!1sen!2sar!4v1586644434502!5m2!1sen!2sar" width="80%"
+                height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
+        <div class="linea"></div>
         <footer>
             <div class="footer-copyright">
                 <p>
