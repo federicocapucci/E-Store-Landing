@@ -6,16 +6,14 @@
 .contenedor {
     position: relative;
     width: 100%;
-    max-width: 2200px;
+    max-width: 1800px;
     margin: auto;
     background-color: #fefefe;
-    box-shadow: 1px 0 5px gray, -1px 0 5px gray;
-    min-width: 400px;
+    min-width: 380px;
 }
 
 nav {
-    padding: 20px 0 !important;
-    margin-left: ;
+    padding: 10px 0 !important;
 }
 
 .fa-apple {
@@ -40,7 +38,7 @@ nav * {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 150px 40px;
+    padding: 80px 40px 80px 40px;
 }
 
 .primer-titulo h2,
@@ -50,6 +48,10 @@ nav * {
     text-align: center;
     padding: 30px;
     margin: 50px 0;
+}
+
+.segundo-titulo h2 {
+    margin: 50px 0 15px 0;
 }
 
 .primer-titulo p {
@@ -92,32 +94,55 @@ nav * {
     padding: 10px;
 }
 
+h5 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
 .formulario {
     margin-top: 40px;
     width: 80%;
     display: block;
-    margin-left: 10px;
     background-color: #fff;
     color: #333;
-    padding: 50px;
-    border-radius: 5px;
-    margin-right: 40px;
-    box-shadow: 0px -2px 5px #838383, 0px 2px 5px #838383;
-    border-radius: 10px;
-    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0px 1px #ddd, 1px 0px #ddd;
+    margin-bottom: 140px;
 }
 
 .formulario h2 {
     margin-bottom: 50px;
 }
 
-footer {
+h3 {
+    text-align: center;
+}
+
+iframe {
+    position: relative;
+    margin-right: 25px;
+    margin-bottom: 50px;
     margin-top: 50px;
+}
+
+footer {
+    margin-top: 0px;
     display: flex;
     justify-content: space-around;
     padding: 20px;
     text-align: center;
     vertical-align: center;
+}
+
+.footer-line {
+    width: 100%;
+    margin-top: 25px;
+    height: 1px;
+    background-color: rgba(110, 107, 107, 0.356);
+}
+
+.copy-line {
+    display: none;
 }
 
 .footer-copyright {
@@ -147,14 +172,38 @@ iframe {
     margin-right: 25px;
 }
 
-.linea {
-    width: 80%;
-    margin: auto;
-    height: 1px;
-    background-color: #ddd;
+@media screen and (max-width: 600px) {
+    .primer-titulo,
+    .segundo-titulo {
+        padding: 30px 10px;
+    }
+    .primer-titulo h2,
+    .segundo-titulo h2 {
+        font-size: 36px;
+        padding: 30px 0;
+    }
+    .primer-titulo p {
+        font-size: 15px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .footer-copyright {
+        color: rgba(29, 30, 32, 0.473);
+    }
+    .footer-links {
+        padding-left: 20px;
+    }
+    .copy-line {
+        display: inline-block;
+        width: 90%;
+        height: 1px;
+        background-color: rgba(110, 107, 107, 0.356);
+    }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .primer-titulo,
     .segundo-titulo {
         padding: 30px 10px;
@@ -162,7 +211,8 @@ iframe {
     .primer-titulo h2,
     .segundo-titulo h2 {
         font-size: 40px;
-        padding: 40px 0;
+        padding: 20px 0;
+        margin: 15px 0;
     }
     .primer-titulo p {
         font-size: 15px;
