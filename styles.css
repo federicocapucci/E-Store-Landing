@@ -12,8 +12,14 @@
     min-width: 380px;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 nav {
-    padding: 10px 0 !important;
+    padding: 5px 0 !important;
 }
 
 .fa-apple {
@@ -22,8 +28,8 @@ nav {
 }
 
 nav * {
-    font-size: 24px;
-    padding: 0 20px;
+    font-size: 20px;
+    padding: 0 18px;
 }
 
 .fa-apple {
@@ -62,8 +68,6 @@ nav * {
     color: #303030;
 }
 
-.card {}
-
 .cont-titulos {
     display: flex;
     justify-content: space-around;
@@ -100,7 +104,7 @@ h5 {
 }
 
 .formulario {
-    margin-top: 40px;
+    margin-top: 140px;
     width: 80%;
     display: block;
     background-color: #fff;
